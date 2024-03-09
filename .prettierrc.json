@@ -1,0 +1,24 @@
+{
+  "plugins": ["prettier-plugin-solidity"],
+  "overrides": [
+    {
+      "files": ["*.sol"],
+      "options": {
+        "parser": "solidity-parse",
+        "printWidth": 120,
+        "tabWidth": 4,
+        "singleQuote": false,
+        "bracketSpacing": false
+      }
+    },
+    {
+      "files": ["*.js",  "*.mjs", "*.ts"],
+      "options": {
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "arrowParens": "always"
+      }
+    }
+  ]
+}
